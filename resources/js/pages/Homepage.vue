@@ -58,11 +58,11 @@ onUnmounted(() => {
 
 <template>
 
-    <Head title="Welcome">
+    <Head title="Drey Trade" description="any description">
         <link rel="preconnect" href="https://rsms.me/" />
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
     </Head>
-    <MainLayout title="Drey Trade - Crypto News" description="any description">
+    <MainLayout>
         <div class="fixed left-8 md:left-12 top-1/2 -translate-y-1/2 hidden md:flex flex-col items-center gap-8 z-40">
             <span class="text-white [writing-mode:vertical-rl] tracking-widest text-xs uppercase">Follow us</span>
 
