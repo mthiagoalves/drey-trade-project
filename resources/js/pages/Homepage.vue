@@ -99,7 +99,7 @@ onUnmounted(() => {
                 </div>
             </div>
         </div>
-        <div class="fixed right-8 md:right-12 top-1/2 -translate-y-1/2 hidden md:flex flex-col items-end gap-8 z-40">
+        <div class="fixed right-8 md:right-8 top-1/2 -translate-y-1/2 hidden md:flex flex-col items-end gap-8 z-40">
 
             <div class="flex items-center gap-4 cursor-pointer" @click="scrollToSection(0)">
                 <span v-if="activeSectionId === 0" class="w-8 h-px bg-white"></span>

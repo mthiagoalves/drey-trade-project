@@ -15,18 +15,18 @@ onMounted(() => {
 <template>
     <MaynLayout :title="title" :description="description">
         <nav class="bg-transparent border-gray-200 dark:bg-transparent fixed w-full z-50 top-0 start-0">
-            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+            <div class="relative w-full flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="https://dreytrade.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="/images/logo.png" class="h-20" alt="Drey Trade Logo" />
                     <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Drey Trade</span>
                 </a>
+
                 <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                     <button type="button"
                         class="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
                         id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown"
                         data-dropdown-placement="bottom">
                         <span class="sr-only">Open user menu</span>
-
                         <div class="relative w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
                             <svg class="absolute w-12 h-12 text-gray-400 -left-1" fill="currentColor"
                                 viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -34,31 +34,25 @@ onMounted(() => {
                                     clip-rule="evenodd"></path>
                             </svg>
                         </div>
-
                     </button>
-                    <!-- Dropdown menu -->
                     <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700 dark:divide-gray-600"
                         id="user-dropdown">
                         <div class="" v-if="$page.props.auth.user" :href="route('dashboard')">
                             <div class="px-4 py-3">
                                 <span class="block text-sm text-gray-900 dark:text-white">User Name</span>
                                 <span
-                                    class="block text-sm  text-gray-500 truncate dark:text-gray-400">user@email.com</span>
+                                    class="block text-sm text-gray-500 truncate dark:text-gray-400">user@email.com</span>
                             </div>
                             <ul class="py-2" aria-labelledby="user-menu-button">
-                                <li>
-                                    <a href="#"
+                                <li><a href="#"
                                         class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Dashboard</a>
                                 </li>
-                                <li>
-                                    <a href="#"
+                                <li><a href="#"
                                         class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Settings</a>
                                 </li>
-                                <li>
-                                    <a href="#"
+                                <li><a href="#"
                                         class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign
-                                        out</a>
-                                </li>
+                                        out</a></li>
                             </ul>
                         </div>
                         <template v-else>
@@ -73,9 +67,7 @@ onMounted(() => {
                                         class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">
                                     Register</Link>
                                 </li>
-
                             </ul>
-
                         </template>
                     </div>
                     <button data-collapse-toggle="navbar-user" type="button"
@@ -89,29 +81,29 @@ onMounted(() => {
                         </svg>
                     </button>
                 </div>
-                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-user">
+
+                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2"
+                    id="navbar-user">
                     <ul
-                        class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
+                        class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
                         <li>
                             <Link :href="route('blog')"
-                                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#0B1D26] md:p-0 dark:text-white md:dark:hover:text-[#0B1D26] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#0B1D26] md:p-0 dark:text-white md:dark:hover:text-teal-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
                             Blog</Link>
                         </li>
                         <li>
                             <Link :href="route('about')"
-                                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#0B1D26] md:p-0 dark:text-white md:dark:hover:text-[#0B1D26] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#0B1D26] md:p-0 dark:text-white md:dark:hover:text-teal-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
                             Sobre nós</Link>
                         </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#0B1D26] md:p-0 dark:text-white md:dark:hover:text-[#0B1D26] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-                                Contatos</a>
+                        <li><a href="#"
+                                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#0B1D26] md:p-0 dark:text-white md:dark:hover:text-teal-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contatos</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="fixed left-8 md:left-12 top-1/2 -translate-y-1/2 hidden md:flex flex-col items-center gap-8 z-40">
+        <div class="fixed left-8 md:left-8 top-1/2 -translate-y-1/2 hidden md:flex flex-col items-center gap-8 z-40">
             <span class="text-white [writing-mode:vertical-rl] tracking-widest text-xs uppercase">Siga</span>
 
             <a href="#" class="text-white hover:text-teal-400 transition-colors">
@@ -136,9 +128,8 @@ onMounted(() => {
             <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                 <div class="md:flex md:justify-between">
                     <div class="mb-6 md:mb-0">
-                        <a href="https://flowbite.com/" class="flex items-center">
-                            <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 me-3"
-                                alt="Drey Trade Logo" />
+                        <a href="https://dreytrade.com/" class="flex items-center">
+                            <img src="/images/logo.png" class="h-16 me-3" alt="Drey Trade Logo" />
                             <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Drey
                                 Trade</span>
                         </a>
@@ -149,13 +140,13 @@ onMounted(() => {
                             </h2>
                             <ul class="text-gray-500 dark:text-gray-400 font-medium">
                                 <li class="mb-4">
-                                    <a href="https://flowbite.com/" class="hover:underline">Drey Trade</a>
+                                    <a href="https://dreytrade.com/" class="hover:underline">Drey Trade</a>
                                 </li>
                                 <li class="mb-4">
-                                    <a href="https://flowbite.com/" class="hover:underline">Blog</a>
+                                    <a href="https://dreytrade.com/" class="hover:underline">Blog</a>
                                 </li>
                                 <li class="mb-4">
-                                    <a href="https://flowbite.com/" class="hover:underline">Sobre Nós</a>
+                                    <a href="https://dreytrade.com/" class="hover:underline">Sobre Nós</a>
                                 </li>
                                 <li>
                                     <a href="https://tailwindcss.com/" class="hover:underline">Contato</a>
@@ -179,7 +170,7 @@ onMounted(() => {
                 <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
                 <div class="sm:flex sm:items-center sm:justify-between">
                     <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a
-                            href="https://flowbite.com/" class="hover:underline">Drey Trade</a>. All Rights Reserved.
+                            href="https://dreytrade.com/" class="hover:underline">Drey Trade</a>. All Rights Reserved.
                     </span>
                     <div class="flex mt-4 sm:justify-center sm:mt-0">
                         <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
