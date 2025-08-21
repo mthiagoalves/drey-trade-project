@@ -26,18 +26,29 @@
                 <div class="p-4 md:p-5">
                     <form class="space-y-4" action="#">
                         <div>
-                            <label for="name"
-                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nome</label>
-                            <input type="name" name="name" id="name" placeholder="Seu nome *"
+                            <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nome
+                                *</label>
+                            <input type="name" name="name" id="name" placeholder="Drey Trade"
                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-teal-500 focus:border-teal-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
-                                required />
+                                required oninvalid="this.setCustomValidity('Por favor, preencha o com seu nome.')"
+                                oninput="this.setCustomValidity('')" />
                         </div>
                         <div>
                             <label for="email"
-                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">E-mail</label>
+                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">E-mail *</label>
                             <input type="email" name="email" id="email"
                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-teal-500 focus:border-teal-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
-                                placeholder="name@dreytrade.com" required />
+                                placeholder="name@dreytrade.com" required
+                                oninvalid="this.setCustomValidity('Por favor, preencha o com seu e-mail.')"
+                                oninput="this.setCustomValidity('')" />
+                        </div>
+                        <div>
+                            <label for="phone"
+                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Telefone</label>
+                            <input type="phone" name="phone" id="phone" placeholder="(11) 99999-9999"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-teal-500 focus:border-teal-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                                required oninvalid="this.setCustomValidity('Por favor, preencha o com seu telefone.')"
+                                oninput="this.setCustomValidity('')" />
                         </div>
 
                         <button type="submit"

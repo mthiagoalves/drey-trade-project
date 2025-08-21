@@ -1,7 +1,38 @@
 <script setup lang="ts">
-import { onMounted } from 'vue'
 import { initFlowbite } from 'flowbite'
 import { Link } from '@inertiajs/vue3';
+import { ref, onMounted, onUnmounted } from 'vue';
+
+// 1. Cria uma variável reativa para armazenar a hora atual.
+const currentTime = ref('');
+
+// Variável para guardar o ID do nosso intervalo, para que possamos limpá-lo depois.
+let intervalId: number;
+
+// 2. Função que atualiza a hora.
+const updateTime = () => {
+    const now = new Date();
+    // Formata a data para o padrão brasileiro, mostrando horas, minutos e segundos.
+    currentTime.value = now.toLocaleTimeString('pt-BR', {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        timeZone: 'America/Sao_Paulo', // Garante o fuso horário correto
+    });
+};
+
+// 3. Quando o componente é "montado" (carregado na tela)...
+onMounted(() => {
+    updateTime(); // Atualiza a hora uma vez imediatamente.
+    // ...inicia um intervalo que chama a função updateTime a cada 1000ms (1 segundo).
+    intervalId = window.setInterval(updateTime, 1000);
+});
+
+// 4. Quando o componente é "desmontado" (removido da tela)...
+onUnmounted(() => {
+    // ...limpa o intervalo para evitar vazamentos de memória. Isso é uma boa prática.
+    clearInterval(intervalId);
+});
 
 defineProps<{
     title?: string;
@@ -15,14 +46,14 @@ onMounted(() => {
 <template>
     <MaynLayout :title="title" :description="description">
         <nav class="bg-transparent border-gray-200 dark:bg-transparent fixed w-full z-50 top-0 start-0">
-            <div class="relative w-full flex flex-wrap items-center justify-between mx-auto p-4">
+            <div class="relative w-full flex flex-wrap items-center justify-between mx-auto px-4">
                 <a href="https://dreytrade.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src="/images/logo.png" class="h-20" alt="Drey Trade Logo" />
                     <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Drey Trade</span>
                 </a>
 
                 <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                    <button type="button"
+                    <!-- <button type="button"
                         class="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
                         id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown"
                         data-dropdown-placement="bottom">
@@ -69,17 +100,19 @@ onMounted(() => {
                                 </li>
                             </ul>
                         </template>
+</div>
+<button data-collapse-toggle="navbar-user" type="button"
+    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+    aria-controls="navbar-user" aria-expanded="false">
+    <span class="sr-only">Open main menu</span>
+    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15" />
+    </svg>
+</button> -->
+                    <div class="flex items-center text-white font-semibold text-lg">
+                        {{ currentTime }}
                     </div>
-                    <button data-collapse-toggle="navbar-user" type="button"
-                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                        aria-controls="navbar-user" aria-expanded="false">
-                        <span class="sr-only">Open main menu</span>
-                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 17 14">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M1 1h15M1 7h15M1 13h15" />
-                        </svg>
-                    </button>
                 </div>
 
                 <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2"
