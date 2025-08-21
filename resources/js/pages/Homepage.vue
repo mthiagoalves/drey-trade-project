@@ -2,7 +2,7 @@
 import MainLayout from '@/layouts/MainLayout.vue';
 import { Head } from '@inertiajs/vue3';
 import { ref, onMounted, onUnmounted } from 'vue';
-
+import Modal from '@/components/Modal.vue';
 const totalSections = 4;
 const activeSectionId = ref(0);
 /**
@@ -63,7 +63,7 @@ onUnmounted(() => {
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
     </Head>
     <MainLayout>
-        <div class="fixed left-8 md:left-12 top-1/2 -translate-y-1/2 hidden md:flex flex-col items-center gap-8 z-40">
+        <div class="fixed left-8 md:left-12 top-1/2 -translate-y-1/2 hidden md:flex flex-col items-center gap-8 z-20">
             <span class="text-white [writing-mode:vertical-rl] tracking-widest text-xs uppercase">Follow us</span>
 
             <a href="#" class="text-white hover:text-teal-400 transition-colors">
@@ -142,7 +142,8 @@ onUnmounted(() => {
             </div>
         </div>
 
-        <div id="section-1" class="h-full w-full bg-[#0B1D26] flex items-center justify-center px-4 sm:px-8 lg:px-16 lg:pt-24 sm:pt-8">
+        <div id="section-1"
+            class="h-full w-full bg-[#0B1D26] flex items-center justify-center px-4 sm:px-8 lg:px-16 lg:pt-24 sm:pt-8">
 
             <div class="max-w-7xl w-full flex flex-col md:flex-row items-center gap-8 lg:gap-16">
 
@@ -170,15 +171,16 @@ onUnmounted(() => {
                             classificações de mercado: iniciante, moderado, avançado, especialista ou profissional.
                         </p>
 
-                        <a href="#"
-                            class="inline-flex items-center gap-2 text-teal-400 mt-8 font-semibold hover:underline">
+                        <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"
+                            type="button"
+                            class="inline-flex items-center gap-2 text-teal-400 mt-8 font-semibold hover:underline cursor-pointer">
                             Se increver
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                             </svg>
-                        </a>
+                        </button>
                     </div>
                 </div>
 
@@ -190,7 +192,8 @@ onUnmounted(() => {
 
             </div>
         </div>
-        <div id="section-2" class="h-full w-full bg-[#0B1D26] flex items-center justify-center px-4 sm:px-8 lg:px-16 lg:pt-24 sm:pt-8">
+        <div id="section-2"
+            class="h-full w-full bg-[#0B1D26] flex items-center justify-center px-4 sm:px-8 lg:px-16 lg:pt-24 sm:pt-8">
 
             <div class="max-w-7xl w-full flex flex-col md:flex-row items-center gap-8 lg:gap-16">
 
@@ -225,20 +228,22 @@ onUnmounted(() => {
                             molhadas.
                         </p>
 
-                        <a href="#"
-                            class="inline-flex items-center gap-2 text-teal-400 mt-8 font-semibold hover:underline">
+                        <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"
+                            type="button"
+                            class="inline-flex items-center gap-2 text-teal-400 mt-8 font-semibold hover:underline cursor-pointer">
                             Se increver
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                             </svg>
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="section-3" class="h-full w-full bg-[#0B1D26] flex items-center justify-center px-4 sm:px-8 lg:px-16 lg:pt-24 sm:pt-8">
+        <div id="section-3"
+            class="h-full w-full bg-[#0B1D26] flex items-center justify-center px-4 sm:px-8 lg:px-16 lg:pt-24 sm:pt-8">
 
             <div class="max-w-7xl w-full flex flex-col md:flex-row items-center gap-8 lg:gap-16">
 
@@ -266,15 +271,16 @@ onUnmounted(() => {
                             tendências e prepare-se para a jornada.
                         </p>
 
-                        <a href="#"
-                            class="inline-flex items-center gap-2 text-teal-400 mt-8 font-semibold hover:underline">
+                        <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"
+                            type="button"
+                            class="inline-flex items-center gap-2 text-teal-400 mt-8 font-semibold hover:underline cursor-pointer">
                             Se increver
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                             </svg>
-                        </a>
+                        </button>
                     </div>
                 </div>
 
@@ -286,7 +292,8 @@ onUnmounted(() => {
 
             </div>
         </div>
-        <div id="section-4" class="h-full w-full bg-[#0B1D26] flex items-center justify-center px-4 sm:px-8 lg:px-16 lg:py-24 sm:py-8">
+        <div id="section-4"
+            class="h-full w-full bg-[#0B1D26] flex items-center justify-center px-4 sm:px-8 lg:px-16 lg:py-24 sm:py-8">
 
             <div class="max-w-7xl w-full flex flex-col md:flex-row items-center gap-8 lg:gap-16">
 
@@ -320,20 +327,21 @@ onUnmounted(() => {
                             estratégia e desfrutar do crescimento e aprendizado ao longo do caminho.
                         </p>
 
-                        <a href="#"
-                            class="inline-flex items-center gap-2 text-teal-400 mt-8 font-semibold hover:underline">
+                        <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"
+                            type="button"
+                            class="inline-flex items-center gap-2 text-teal-400 mt-8 font-semibold hover:underline cursor-pointer">
                             Se increver
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                             </svg>
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
 
-
+        <Modal />
     </MainLayout>
 </template>
