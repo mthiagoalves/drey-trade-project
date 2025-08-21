@@ -32,19 +32,6 @@ import { Head } from '@inertiajs/vue3';
                     </h1>
                 </div>
             </div>
-            <div class="absolute inset-0 flex items-end justify-center pointer-events-none">
-                <div class="w-full max-w-4xl px-4">
-                    <a href="#"
-                        class="mb-2 text-white mx-auto block animate-bounce w-12 h-12 p-2 rounded-full hover:bg-white/10 transition-colors pointer-events-auto">
-
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                        </svg>
-
-                    </a>
-                </div>
-            </div>
         </div>
     </MainLayout>
 </template>
