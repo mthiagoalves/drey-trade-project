@@ -3,7 +3,7 @@ import MainLayout from '@/layouts/MainLayout.vue';
 import { Head } from '@inertiajs/vue3';
 import { ref, onMounted, onUnmounted } from 'vue';
 import Modal from '@/components/Modal.vue';
-const totalSections = 4;
+const totalSections = 3;
 const activeSectionId = ref(0);
 /**
  * Função para rolar suavemente até uma seção quando um item da sidebar é clicado.
@@ -224,7 +224,7 @@ onUnmounted(() => {
             </div>
         </div>
         <div id="section-3"
-            class="h-full w-full bg-[#0B1D26] flex items-center justify-center px-4 sm:px-8 lg:px-16 lg:pt-24 sm:pt-8">
+            class="h-full w-full bg-[#0B1D26] flex items-center justify-center px-4 sm:px-8 lg:px-16 lg:py-24 py-8">
 
             <div class="max-w-7xl w-full flex flex-col md:flex-row items-center gap-8 lg:gap-16">
 
@@ -273,55 +273,6 @@ onUnmounted(() => {
 
             </div>
         </div>
-        <div id="section-4"
-            class="h-full w-full bg-[#0B1D26] flex items-center justify-center px-4 sm:px-8 lg:px-16 lg:py-24 py-8">
-
-            <div class="max-w-7xl w-full flex flex-col-reverse md:flex-row items-center gap-8 lg:gap-16">
-                <div class="w-full md:w-1/2 h-80 md:h-[60vh]">
-                    <img src="https://images.unsplash.com/photo-1501555088652-021faa106b9b"
-                        alt="Grupo de amigos em uma trilha de montanha"
-                        class="w-full h-full object-cover rounded-lg shadow-2xl">
-                </div>
-
-                <div class="w-full md:w-1/2 relative py-8">
-                    <div
-                        class="absolute -top-8 -left-8 lg:-left-16 text-white/5 font-extrabold text-[12rem] lg:text-[15rem] z-0 select-none">
-                        04
-                    </div>
-
-                    <div class="relative z-10">
-                        <div class="flex items-center gap-4">
-                            <span class="w-10 h-px bg-teal-400"></span>
-                            <span class="text-teal-400 uppercase tracking-widest text-sm font-semibold">
-                                Aproveite a Jornada
-                            </span>
-                        </div>
-
-                        <h2 class="font-serif text-white text-4xl lg:text-6xl font-bold leading-tight mt-6">
-                            Sozinho ou em Grupo?
-                        </h2>
-
-                        <p class="text-gray-300 mt-6 max-w-prose">
-                            Assim como em uma trilha, investir pode ser uma jornada solitária ou uma experiência
-                            compartilhada. Ambos os caminhos têm seus méritos. O importante é manter-se firme em sua
-                            estratégia e desfrutar do crescimento e aprendizado ao longo do caminho.
-                        </p>
-
-                        <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"
-                            type="button"
-                            class="inline-flex items-center gap-2 text-teal-400 mt-8 font-semibold hover:underline cursor-pointer">
-                            Se increver
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <Modal />
     </MainLayout>
 </template>
