@@ -175,10 +175,9 @@ onUnmounted(() => {
             </div>
         </div>
         <div id="section-2"
-            class="h-full w-full bg-[#0B1D26] flex items-center justify-center px-4 sm:px-8 lg:px-16 lg:pt-24 sm:pt-8">
+            class="h-full w-full bg-[#0B1D26] flex items-center justify-center px-4 sm:px-8 lg:px-16 lg:pt-24 pt-8">
 
-            <div class="max-w-7xl w-full flex flex-col md:flex-row items-center gap-8 lg:gap-16">
-
+            <div class="max-w-7xl w-full flex flex-col-reverse md:flex-row items-center gap-8 lg:gap-16">
                 <div class="w-full md:w-1/2 h-80 md:h-[60vh]">
                     <img src="https://images.unsplash.com/photo-1551632811-561732d1e306"
                         alt="Pessoa com mochila de trilha vermelha olhando para montanhas"
@@ -275,10 +274,9 @@ onUnmounted(() => {
             </div>
         </div>
         <div id="section-4"
-            class="h-full w-full bg-[#0B1D26] flex items-center justify-center px-4 sm:px-8 lg:px-16 lg:py-24 sm:py-8">
+            class="h-full w-full bg-[#0B1D26] flex items-center justify-center px-4 sm:px-8 lg:px-16 lg:py-24 py-8">
 
-            <div class="max-w-7xl w-full flex flex-col md:flex-row items-center gap-8 lg:gap-16">
-
+            <div class="max-w-7xl w-full flex flex-col-reverse md:flex-row items-center gap-8 lg:gap-16">
                 <div class="w-full md:w-1/2 h-80 md:h-[60vh]">
                     <img src="https://images.unsplash.com/photo-1501555088652-021faa106b9b"
                         alt="Grupo de amigos em uma trilha de montanha"
