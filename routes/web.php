@@ -22,5 +22,7 @@ Route::get('dashboard', function () {
 
 Route::post('/subscribe', [SubscriptionController::class, 'store'])->name('subscribe');
 
+Route::get('/subscriptions/export', [SubscriptionController::class, 'export'])->name('subscriptions.export');
+
 require __DIR__ . '/settings.php';
 require __DIR__ . '/auth.php';
