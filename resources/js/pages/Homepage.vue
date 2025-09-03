@@ -85,10 +85,7 @@ onUnmounted(() => {
     <MainLayout>
 
         <div class="h-screen w-full relative" id="section-0">
-            <video src="/videos/initial-banner.mp4" autoplay loop muted playsinline
-                class="w-full h-full object-cover object-top">
-                Seu navegador não suporta a tag de vídeo.
-            </video>
+            <img src="/images/initial-banner.png" alt="Initial Banner" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-gradient-to-b from-transparent from-60% to-[#0B1D26]"></div>
 
             <div class="absolute inset-0 flex items-end justify-start p-8 md:p-12 md:mb-16 md:ml-16 m-0 mb-14">
