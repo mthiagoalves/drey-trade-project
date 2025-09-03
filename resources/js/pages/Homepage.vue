@@ -97,7 +97,7 @@ onUnmounted(() => {
                     <h1 ref="typewriter"
                         class="text-[#006B91] text-4xl md:text-5xl font-bold leading-tight text-start [text-shadow:2px_2px_4px_rgba(0,0,0,0.5)] font-raster">
                     </h1>
-                    <p class="text-gray-300 mt-5 max-w-full text-[20px]">
+                    <p class="text-gray-300 mt-2 max-w-full text-[20px]">
                         Receba análises inteligentes, em apenas uma página por semana, direto no seu e-mail.
                     </p>
                     <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"
