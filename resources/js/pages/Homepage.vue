@@ -3,7 +3,8 @@ import MainLayout from '@/layouts/MainLayout.vue';
 import { Head } from '@inertiajs/vue3';
 import { ref, onMounted, onUnmounted } from 'vue';
 import Modal from '@/components/Modal.vue';
-const totalSections = 3;
+
+const totalSections = 5;
 const activeSectionId = ref(0);
 /**
  * Função para rolar suavemente até uma seção quando um item da sidebar é clicado.
@@ -65,8 +66,10 @@ onUnmounted(() => {
     <MainLayout>
 
         <div class="h-screen w-full relative" id="section-0">
-            <img src="/images/initial-banner-gpt.png" alt="Initial Banner" class="w-full h-full object-cover">
-
+            <video src="/videos/initial-banner.mp4" autoplay loop muted playsinline
+                class="w-full h-full object-cover object-top">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
             <div class="absolute inset-0 bg-gradient-to-b from-transparent from-60% to-[#0B1D26]"></div>
 
             <div class="absolute inset-0 flex items-center justify-center">
@@ -80,7 +83,7 @@ onUnmounted(() => {
                         </p>
                     </div>
 
-                    <h1 class="font-serif text-white text-5xl md:text-7xl font-bold leading-tight text-start">
+                    <h1 class="text-white text-5xl md:text-7xl font-bold leading-tight text-start">
                         Esteja Preparado Para o Mercado e Além
                     </h1>
                 </div>
@@ -139,18 +142,24 @@ onUnmounted(() => {
                         <div class="flex items-center gap-4">
                             <span class="w-10 h-px bg-teal-400"></span>
                             <span class="text-teal-400 uppercase tracking-widest text-sm font-semibold">
-                                Comece aqui
+                                AVISO IMPORTANTE
                             </span>
                         </div>
 
-                        <h2 class="font-serif text-white text-4xl lg:text-6xl font-bold leading-tight mt-6">
-                            Qual o seu nível de investidor?
+                        <h2 class="text-white text-4xl lg:text-4xl font-bold leading-tight mt-6">
+                            Conteúdo 100% Educacional.
+                        </h2>
+                        <h2 class="text-white text-3xl lg:text-3xl font-bold leading-tight">
+                            Não é recomendação de investimento.
                         </h2>
 
                         <p class="text-gray-300 mt-6 max-w-prose">
-                            Determinar seu nível de conhecimento é uma ferramenta importante ao planejar futuros
-                            investimentos. Este guia ajudará você a planejar suas operações de acordo com as
-                            classificações de mercado: iniciante, moderado, avançado, especialista ou profissional.
+                            De acordo com a Resolução CVM nº 20/2021, apenas profissionais devidamente registrados como
+                            analistas de valores mobiliários podem elaborar e divulgar relatórios de análise financeira.
+                            Na Drey Trade, somos entusiastas do mercado cripto que unem dados, estatísticas e
+                            comportamento de mercado para criar conteúdo didáticos e acessíveis. Nosso compromisso é
+                            compartilhar insights educativos que ajudam você a compreender melhor esse universo, <b>sem
+                                indicar compra ou venda de ativos.</b>
                         </p>
 
                         <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"
@@ -194,19 +203,20 @@ onUnmounted(() => {
                         <div class="flex items-center gap-4">
                             <span class="w-10 h-px bg-teal-400"></span>
                             <span class="text-teal-400 uppercase tracking-widest text-sm font-semibold">
-                                Equipamentos Essenciais
+                                PERSPECTIVA E CONTEXTO
                             </span>
                         </div>
 
-                        <h2 class="font-serif text-white text-4xl lg:text-6xl font-bold leading-tight mt-6">
-                            Escolhendo o Equipamento Certo!
+                        <h2 class="text-white text-4xl lg:text-5xl font-bold leading-tight mt-6">
+                            Um olhar além do óbvio.
                         </h2>
 
                         <p class="text-gray-300 mt-6 max-w-prose">
-                            O bom de começar uma trilha é que você não precisa de equipamentos especiais, você
-                            provavelmente já tem o que precisa. Vamos começar com as roupas. Um erro típico dos
-                            iniciantes é usar jeans e roupas normais, que ficam pesadas e causam atrito quando suadas ou
-                            molhadas.
+                            O mercado de criptomoedas é cheio de ruídos. Por isso, vamos além da superfície: analisamos
+                            dados sob ângulos não convencionais, identificando tendências, padrões e movimentos que nem
+                            sempre aparecem nas análises tradicionais. Aqui, você encontra <b>contexto + visão
+                                estratégica,</b>
+                            para aprender a enxergar o mercado de forma diferente.
                         </p>
 
                         <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"
@@ -238,25 +248,169 @@ onUnmounted(() => {
                         <div class="flex items-center gap-4">
                             <span class="w-10 h-px bg-teal-400"></span>
                             <span class="text-teal-400 uppercase tracking-widest text-sm font-semibold">
-                                Planeje sua Rota
+                                ONE PAGE SEMANAL
                             </span>
                         </div>
 
-                        <h2 class="font-serif text-white text-4xl lg:text-6xl font-bold leading-tight mt-6">
-                            Onde Ir A Seguir?
+                        <h2 class="text-white text-4xl lg:text-5xl font-bold leading-tight mt-6">
+                            O resumo que você precisa. Toda semana.
                         </h2>
 
                         <p class="text-gray-300 mt-6 max-w-prose">
-                            A beleza do investimento está nas inúmeras possibilidades. De ações de tecnologia a
-                            commodities, escolher o próximo passo requer análise e visão. Avalie o cenário, verifique as
-                            tendências e prepare-se para a jornada.
+                            Sem relatórios cansativos, sem perder tempo.
+                            O One Page Drey Trade é um resumo rápido e direto, que chega toda semana no seu e-mail com
+                            os principais dados, análises e insights exclusivos sobre o mercado de criptomoedas.
+                            Em apenas uma página, você vai ficar por dentro do que realmente faz diferença.
+
                         </p>
+
+                        <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"
+                            type="button"
+                            class="inline-flex items-center gap-2 text-teal-400 mt-8 font-semibold hover:underline cursor-pointer">
+                            Cadastre-se agora e receba gratuitamente seu primeiro One Page
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-1/2 h-80 md:h-[60vh]">
+                    <img src="https://images.unsplash.com/photo-1473625247510-8ceb1760943f"
+                        alt="Pessoa olhando um mapa com montanhas ao fundo"
+                        class="w-full h-full object-cover rounded-lg shadow-2xl">
+                </div>
+
+            </div>
+        </div>
+        <div id="section-4"
+            class="h-full w-full bg-[#0B1D26] flex items-center justify-center px-4 sm:px-8 lg:px-16 lg:pt-24 pt-8">
+
+            <div class="max-w-7xl w-full flex flex-col-reverse md:flex-row items-center gap-8 lg:gap-16">
+                <div class="w-full md:w-1/2 h-80 md:h-[60vh]">
+                    <img src="https://images.unsplash.com/photo-1551632811-561732d1e306"
+                        alt="Pessoa com mochila de trilha vermelha olhando para montanhas"
+                        class="w-full h-full object-cover rounded-lg shadow-2xl">
+                </div>
+
+                <div class="w-full md:w-1/2 relative py-8">
+                    <div
+                        class="absolute -top-8 -left-8 lg:-left-16 text-white/5 font-extrabold text-[12rem] lg:text-[15rem] z-0 select-none">
+                        04
+                    </div>
+
+                    <div class="relative z-10">
+                        <div class="flex items-center gap-4">
+                            <span class="w-10 h-px bg-teal-400"></span>
+                            <span class="text-teal-400 uppercase tracking-widest text-sm font-semibold">
+                                BENEFÍCIOS EM DESTAQUE (BULLET POINT – USAR ICONE DE MOEDA)
+                            </span>
+                        </div>
+
+                        <h2 class="text-white text-4xl lg:text-5xl font-bold leading-tight mt-6">
+                            Por que assinar o One Page Drey Trade?
+                        </h2>
+                        <ul class="text-gray-300 mt-6 max-w-prose space-y-3">
+
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-teal-400 shrink-0" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                </svg>
+                                <span>Conteúdo gratuito e exclusivo</span>
+                            </li>
+
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-teal-400 shrink-0" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                </svg>
+                                <span>Resumos curtos, fáceis de entender</span>
+                            </li>
+
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-teal-400 shrink-0" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                </svg>
+                                <span>Insights baseados em dados reais</span>
+                            </li>
+
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-teal-400 shrink-0" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                </svg>
+                                <span>Uma visão estratégica além do óbvio</span>
+                            </li>
+
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-teal-400 shrink-0" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                </svg>
+                                <span>Entrega semanal no seu e-mail</span>
+                            </li>
+
+                        </ul>
 
                         <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"
                             type="button"
                             class="inline-flex items-center gap-2 text-teal-400 mt-8 font-semibold hover:underline cursor-pointer">
                             Se increver
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="section-5"
+            class="h-full w-full bg-[#0B1D26] flex items-center justify-center px-4 sm:px-8 lg:px-16 lg:py-24 py-8">
+
+            <div class="max-w-7xl w-full flex flex-col md:flex-row items-center gap-8 lg:gap-16">
+
+                <div class="w-full md:w-1/2 relative py-8">
+                    <div
+                        class="absolute -top-8 -left-8 lg:-left-16 text-white/5 font-extrabold text-[12rem] lg:text-[15rem] z-0 select-none">
+                        05
+                    </div>
+
+                    <div class="relative z-10">
+                        <div class="flex items-center gap-4">
+                            <span class="w-10 h-px bg-teal-400"></span>
+                            <span class="text-teal-400 uppercase tracking-widest text-sm font-semibold">
+                                CALL TO ACTION FINAL
+                            </span>
+                        </div>
+
+                        <h2 class="text-white text-4xl lg:text-5xl font-bold leading-tight mt-6">
+                            Não fique para trás no mercado cripto.
+                        </h2>
+
+                        <p class="text-gray-300 mt-6 max-w-prose">
+                            A cada semana surgem novos dados, novas tendências e novos comportamentos no mercado de
+                            criptomoedas.
+                            Com o One Page Drey Trade, você se mantém informado, atualizado e à frente.
+
+
+                        </p>
+
+                        <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"
+                            type="button"
+                            class="inline-flex items-center gap-3 lg:text-2xl text-teal-400 mt-8 font-semibold hover:underline cursor-pointer">
+                            Quero meu acesso agora
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
