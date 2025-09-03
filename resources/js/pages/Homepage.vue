@@ -3,9 +3,12 @@ import MainLayout from '@/layouts/MainLayout.vue';
 import { Head } from '@inertiajs/vue3';
 import { ref, onMounted, onUnmounted } from 'vue';
 import Modal from '@/components/Modal.vue';
+import Typed from "typed.js";
 
 const totalSections = 5;
 const activeSectionId = ref(0);
+const typewriter = ref(null);
+
 /**
  * Função para rolar suavemente até uma seção quando um item da sidebar é clicado.
  */
@@ -47,6 +50,16 @@ onMounted(() => {
     sections.forEach(section => {
         observer.observe(section);
     });
+
+    new Typed(typewriter.value, {
+        strings: [
+            'DO <span class="text-red-500">CAOS</span> DAS CRIPTOS À <span class="text-green-400">CLAREZA</span> DOS DADOS'
+        ],
+        typeSpeed: 50, // Velocidade da digitação
+        backSpeed: 30, // Velocidade ao apagar
+        showCursor: false, // Cursor piscando
+        loop: true
+    });
 });
 
 onUnmounted(() => {
@@ -56,6 +69,12 @@ onUnmounted(() => {
     }
 });
 </script>
+
+<style>
+.font-raster {
+    font-family: 'Raster', 'Rajdhani';
+}
+</style>
 
 <template>
 
@@ -72,20 +91,20 @@ onUnmounted(() => {
             </video>
             <div class="absolute inset-0 bg-gradient-to-b from-transparent from-60% to-[#0B1D26]"></div>
 
-            <div class="absolute inset-0 flex items-center justify-center">
+            <div class="absolute inset-0 flex items-end justify-start p-8 md:p-12 md:mb-16 md:ml-16 m-0 mb-14">
+                <div class="w-full max-w-6xl md:px-4 p-0">
 
-                <div class="w-full max-w-4xl px-4">
-
-                    <div class="flex items-center justify-start mb-4">
-                        <span class="w-16 h-px bg-teal-400"></span>
-                        <p class="text-teal-400 uppercase tracking-widest text-sm font-semibold ml-3">
-                            Análise de Criptoativos
-                        </p>
-                    </div>
-
-                    <h1 class="text-white text-5xl md:text-7xl font-bold leading-tight text-start">
-                        Esteja Preparado Para o Mercado e Além
+                    <h1 ref="typewriter"
+                        class="text-[#006B91] text-4xl md:text-5xl font-bold leading-tight text-start [text-shadow:2px_2px_4px_rgba(0,0,0,0.5)] font-raster">
                     </h1>
+                    <p class="text-gray-300 mt-5 max-w-full text-[20px]">
+                        Receba análises inteligentes, em apenas uma página por semana, direto no seu e-mail.
+                    </p>
+                    <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"
+                        type="button"
+                        class="bg-[#006B91] text-white font-raster mt-5 cursor-pointer font-bold py-1 px-4 rounded-full text-lg uppercase tracking-wider transition duration-300 ease-in-out hover:bg-[#005a7a] focus:outline-none focus:ring-4 focus:ring-[#006B91]/50">
+                        QUERO MEU ONE PAGE
+                    </button>
                 </div>
             </div>
             <div class="absolute inset-0 flex items-end justify-center pointer-events-none">
