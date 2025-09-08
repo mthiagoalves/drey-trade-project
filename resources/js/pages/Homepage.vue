@@ -5,7 +5,7 @@ import { ref, onMounted, onUnmounted } from 'vue';
 import Modal from '@/components/Modal.vue';
 import Typed from "typed.js";
 
-const totalSections = 5;
+const totalSections = 3;
 const activeSectionId = ref(0);
 const typewriter = ref(null);
 
