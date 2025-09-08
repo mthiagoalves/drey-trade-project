@@ -85,8 +85,8 @@ onUnmounted(() => {
     <MainLayout>
 
         <div class="h-screen w-full relative" id="section-0">
-            <img src="/images/initial-banner.png" alt="Initial Banner" class="w-full h-full object-cover">
-            <div class="absolute inset-0 bg-gradient-to-b from-transparent from-60% to-[#0B1D26]"></div>
+            <img src="/images/bannerprincipal1 (1).png" alt="Initial Banner" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent from-60% to-[#000000]"></div>
 
             <div class="absolute inset-0 flex items-end justify-start p-8 md:p-12 md:mb-16 md:ml-16 m-0 mb-14">
                 <div class="w-full max-w-6xl md:px-4 p-0">
@@ -95,12 +95,13 @@ onUnmounted(() => {
                         class="text-white text-4xl md:text-5xl font-bold leading-tight text-start [text-shadow:2px_2px_4px_rgba(0,0,0,0.5)] font-raster">
                     </h1>
                     <p class="text-gray-300 mt-2 max-w-full text-[20px]">
-                        Receba análises inteligentes, em apenas uma página por semana, direto no seu e-mail.
+                        Receba toda semana uma one page com nossas análises, <br class="hidden md:block"> eu sei que você não lê esse monte de
+                        newsletter.
                     </p>
                     <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"
                         type="button"
                         class="bg-[#006B91] text-white font-raster mt-5 cursor-pointer font-bold py-1 px-4 rounded-full text-lg uppercase tracking-wider transition duration-300 ease-in-out hover:bg-[#005a7a] focus:outline-none focus:ring-4 focus:ring-[#006B91]/50">
-                        QUERO MEU ONE PAGE
+                        Se inscreve aqui!
                     </button>
                 </div>
             </div>
@@ -144,13 +145,13 @@ onUnmounted(() => {
         </div>
 
         <div id="section-1"
-            class="h-full w-full bg-[#0B1D26] flex items-center justify-center px-4 sm:px-8 lg:px-16 lg:pt-24 sm:pt-8">
+            class="h-full w-full bg-[#000000] flex items-center justify-center px-4 sm:px-8 lg:px-16 lg:pt-24 sm:pt-8">
 
             <div class="max-w-7xl w-full flex flex-col md:flex-row items-center gap-8 lg:gap-16">
 
                 <div class="w-full md:w-1/2 relative py-8">
                     <div
-                        class="absolute -top-8 -left-8 lg:-left-16 text-white/5 font-extrabold text-[12rem] lg:text-[15rem] z-0 select-none">
+                        class="absolute -top-8 -left-8 lg:-left-16 text-white/15 font-extrabold text-[12rem] lg:text-[15rem] z-0 select-none">
                         01
                     </div>
 
@@ -172,10 +173,10 @@ onUnmounted(() => {
                         <p class="text-gray-300 mt-6 max-w-prose">
                             De acordo com a Resolução CVM nº 20/2021, apenas profissionais devidamente registrados como
                             analistas de valores mobiliários podem elaborar e divulgar relatórios de análise financeira.
-                            Na Drey Trade, somos entusiastas do mercado cripto que unem dados, estatísticas e
-                            comportamento de mercado para criar conteúdo didáticos e acessíveis. Nosso compromisso é
-                            compartilhar insights educativos que ajudam você a compreender melhor esse universo, <b>sem
-                                indicar compra ou venda de ativos.</b>
+                            Somos entusiastas do mercado cripto que unem dados, estatísticas e comportamento de mercado
+                            para criar conteúdos didáticos e acessíveis. Minha ideia aqui é compartilhar insights
+                            interessantes que vão te ajudar a compreender melhor esse universo, sem indicar compra ou
+                            venda de ativos.
                         </p>
 
                         <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"
@@ -200,7 +201,7 @@ onUnmounted(() => {
             </div>
         </div>
         <div id="section-2"
-            class="h-full w-full bg-[#0B1D26] flex items-center justify-center px-4 sm:px-8 lg:px-16 lg:pt-24 pt-8">
+            class="h-full w-full bg-[#000000] flex items-center justify-center px-4 sm:px-8 lg:px-16 lg:pt-24 pt-8">
 
             <div class="max-w-7xl w-full flex flex-col-reverse md:flex-row items-center gap-8 lg:gap-16">
                 <div class="w-full md:w-1/2 h-80 md:h-[60vh]">
@@ -211,7 +212,7 @@ onUnmounted(() => {
 
                 <div class="w-full md:w-1/2 relative py-8">
                     <div
-                        class="absolute -top-8 -left-8 lg:-left-16 text-white/5 font-extrabold text-[12rem] lg:text-[15rem] z-0 select-none">
+                        class="absolute -top-8 -left-8 lg:-left-16 text-white/15 font-extrabold text-[12rem] lg:text-[15rem] z-0 select-none">
                         02
                     </div>
 
@@ -228,11 +229,11 @@ onUnmounted(() => {
                         </h2>
 
                         <p class="text-gray-300 mt-6 max-w-prose">
-                            O mercado de criptomoedas é cheio de ruídos. Por isso, vamos além da superfície: analisamos
-                            dados sob ângulos não convencionais, identificando tendências, padrões e movimentos que nem
-                            sempre aparecem nas análises tradicionais. Aqui, você encontra <b>contexto + visão
-                                estratégica,</b>
-                            para aprender a enxergar o mercado de forma diferente.
+                            Que tal analisarmos perspectivas diferentes do universo de criptomoedas? Já tem muita gente
+                            boa fazendo análise gráfica, análise de fluxo, ou mesmo fundamentalista por aí. Que tal
+                            olharmos os dados de outra maneira? Por exemplo, você sabia que toda terça chuvosa o ETHUSDT
+                            caiu? Bazinga!
+
                         </p>
 
                         <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"
@@ -250,13 +251,13 @@ onUnmounted(() => {
             </div>
         </div>
         <div id="section-3"
-            class="h-full w-full bg-[#0B1D26] flex items-center justify-center px-4 sm:px-8 lg:px-16 lg:py-24 py-8">
+            class="h-full w-full bg-[#000000] flex items-center justify-center px-4 sm:px-8 lg:px-16 lg:py-24 py-8">
 
             <div class="max-w-7xl w-full flex flex-col md:flex-row items-center gap-8 lg:gap-16">
 
                 <div class="w-full md:w-1/2 relative py-8">
                     <div
-                        class="absolute -top-8 -left-8 lg:-left-16 text-white/5 font-extrabold text-[12rem] lg:text-[15rem] z-0 select-none">
+                        class="absolute -top-8 -left-8 lg:-left-16 text-white/15 font-extrabold text-[12rem] lg:text-[15rem] z-0 select-none">
                         03
                     </div>
 
@@ -269,15 +270,15 @@ onUnmounted(() => {
                         </div>
 
                         <h2 class="text-white text-4xl lg:text-5xl font-bold leading-tight mt-6">
-                            O resumo que você precisa. Toda semana.
+                            Uma página! Toda semana.
                         </h2>
 
                         <p class="text-gray-300 mt-6 max-w-prose">
-                            Sem relatórios cansativos, sem perder tempo.
-                            O One Page Drey Trade é um resumo rápido e direto, que chega toda semana no seu e-mail com
-                            os principais dados, análises e insights exclusivos sobre o mercado de criptomoedas.
-                            Em apenas uma página, você vai ficar por dentro do que realmente faz diferença.
-
+                            Sem relatórios cansativos, sem perder tempo, sem firulas e sem mimimi. Just one page. Tempo
+                            é dinheiro amigos. Todo domingo faço um resumo e consolido os temas abordados na semana,
+                            conecto todos eles numa única página para você receber aí no seu e-mail - num visual
+                            bonitão, que você pode até postar no Instagram. Além disso, eu sei bem que você não lê esse
+                            monte de newsletter que está inscrito.
                         </p>
 
                         <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"
@@ -301,148 +302,7 @@ onUnmounted(() => {
 
             </div>
         </div>
-        <div id="section-4"
-            class="h-full w-full bg-[#0B1D26] flex items-center justify-center px-4 sm:px-8 lg:px-16 lg:pt-24 pt-8">
 
-            <div class="max-w-7xl w-full flex flex-col-reverse md:flex-row items-center gap-8 lg:gap-16">
-                <div class="w-full md:w-1/2 h-80 md:h-[60vh]">
-                    <img src="https://images.unsplash.com/photo-1551632811-561732d1e306"
-                        alt="Pessoa com mochila de trilha vermelha olhando para montanhas"
-                        class="w-full h-full object-cover rounded-lg shadow-2xl">
-                </div>
-
-                <div class="w-full md:w-1/2 relative py-8">
-                    <div
-                        class="absolute -top-8 -left-8 lg:-left-16 text-white/5 font-extrabold text-[12rem] lg:text-[15rem] z-0 select-none">
-                        04
-                    </div>
-
-                    <div class="relative z-10">
-                        <div class="flex items-center gap-4">
-                            <span class="w-10 h-px bg-teal-400"></span>
-                            <span class="text-teal-400 uppercase tracking-widest text-sm font-semibold">
-                                BENEFÍCIOS EM DESTAQUE (BULLET POINT – USAR ICONE DE MOEDA)
-                            </span>
-                        </div>
-
-                        <h2 class="text-white text-4xl lg:text-5xl font-bold leading-tight mt-6">
-                            Por que assinar o One Page Drey Trade?
-                        </h2>
-                        <ul class="text-gray-300 mt-6 max-w-prose space-y-3">
-
-                            <li class="flex items-start gap-3">
-                                <svg class="w-6 h-6 text-teal-400 shrink-0" xmlns="http://www.w3.org/2000/svg"
-                                    fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                </svg>
-                                <span>Conteúdo gratuito e exclusivo</span>
-                            </li>
-
-                            <li class="flex items-start gap-3">
-                                <svg class="w-6 h-6 text-teal-400 shrink-0" xmlns="http://www.w3.org/2000/svg"
-                                    fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                </svg>
-                                <span>Resumos curtos, fáceis de entender</span>
-                            </li>
-
-                            <li class="flex items-start gap-3">
-                                <svg class="w-6 h-6 text-teal-400 shrink-0" xmlns="http://www.w3.org/2000/svg"
-                                    fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                </svg>
-                                <span>Insights baseados em dados reais</span>
-                            </li>
-
-                            <li class="flex items-start gap-3">
-                                <svg class="w-6 h-6 text-teal-400 shrink-0" xmlns="http://www.w3.org/2000/svg"
-                                    fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                </svg>
-                                <span>Uma visão estratégica além do óbvio</span>
-                            </li>
-
-                            <li class="flex items-start gap-3">
-                                <svg class="w-6 h-6 text-teal-400 shrink-0" xmlns="http://www.w3.org/2000/svg"
-                                    fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                </svg>
-                                <span>Entrega semanal no seu e-mail</span>
-                            </li>
-
-                        </ul>
-
-                        <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"
-                            type="button"
-                            class="inline-flex items-center gap-2 text-teal-400 mt-8 font-semibold hover:underline cursor-pointer">
-                            Se increver
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="section-5"
-            class="h-full w-full bg-[#0B1D26] flex items-center justify-center px-4 sm:px-8 lg:px-16 lg:py-24 py-8">
-
-            <div class="max-w-7xl w-full flex flex-col md:flex-row items-center gap-8 lg:gap-16">
-
-                <div class="w-full md:w-1/2 relative py-8">
-                    <div
-                        class="absolute -top-8 -left-8 lg:-left-16 text-white/5 font-extrabold text-[12rem] lg:text-[15rem] z-0 select-none">
-                        05
-                    </div>
-
-                    <div class="relative z-10">
-                        <div class="flex items-center gap-4">
-                            <span class="w-10 h-px bg-teal-400"></span>
-                            <span class="text-teal-400 uppercase tracking-widest text-sm font-semibold">
-                                CALL TO ACTION FINAL
-                            </span>
-                        </div>
-
-                        <h2 class="text-white text-4xl lg:text-5xl font-bold leading-tight mt-6">
-                            Não fique para trás no mercado cripto.
-                        </h2>
-
-                        <p class="text-gray-300 mt-6 max-w-prose">
-                            A cada semana surgem novos dados, novas tendências e novos comportamentos no mercado de
-                            criptomoedas.
-                            Com o One Page Drey Trade, você se mantém informado, atualizado e à frente.
-
-
-                        </p>
-
-                        <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"
-                            type="button"
-                            class="inline-flex items-center gap-3 lg:text-2xl text-teal-400 mt-8 font-semibold hover:underline cursor-pointer">
-                            Quero meu acesso agora
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="w-full md:w-1/2 h-80 md:h-[60vh]">
-                    <img src="https://images.unsplash.com/photo-1473625247510-8ceb1760943f"
-                        alt="Pessoa olhando um mapa com montanhas ao fundo"
-                        class="w-full h-full object-cover rounded-lg shadow-2xl">
-                </div>
-
-            </div>
-        </div>
         <Modal />
     </MainLayout>
 </template>
