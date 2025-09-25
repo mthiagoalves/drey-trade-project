@@ -168,20 +168,12 @@ const chartOptions = computed(() => ({
             <div
                 class="relative min-h-[100vh] flex-1 rounded-xl border border-sidebar-border/70 md:min-h-min dark:border-sidebar-border">
                 <PlaceholderPattern />
-<<<<<<< HEAD
                 <div class="p-4 sm:p-6 lg:p-8 h-full">
-=======
-                <div class="p-4 sm:p-6 lg:p-8">
->>>>>>> 01f1820e2d4a52ab2799103f057429b31038fa05
                     <div v-if="isLoading" class="text-center text-gray-400">Carregando dados do dashboard...</div>
                     <div v-else-if="error" class="bg-red-500/10 text-red-500 p-4 rounded-lg">
                         <strong>Ocorreu um erro:</strong> {{ error }}
                     </div>
-<<<<<<< HEAD
                     <div v-else class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-3 h-full">
-=======
-                    <div v-else class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-3">
->>>>>>> 01f1820e2d4a52ab2799103f057429b31038fa05
                         <div class="md:col-span-2 lg:col-span-3 bg-gray-800 p-6 rounded-lg shadow-lg">
                             <h3 class="text-sm font-medium text-gray-400 mb-4">ACESSOS DIÁRIOS (ÚLTIMOS 30 DIAS)</h3>
                             <VueApexCharts type="area" height="300" :options="chartOptions" :series="chartSeries" />
