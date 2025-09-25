@@ -20,6 +20,10 @@ Route::get('dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+Route::get('analytics', function () {
+    return Inertia::render('Analytics');
+})->middleware(['auth', 'verified'])->name('analytics');
+
 Route::post('/subscribe', [SubscriptionController::class, 'store'])->name('subscribe');
 
 Route::get('/subscriptions/export', [SubscriptionController::class, 'export'])->name('subscriptions.export');
