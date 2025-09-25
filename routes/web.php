@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AnalyticsController;
 use App\Http\Controllers\SubscriptionController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -27,6 +28,10 @@ Route::get('analytics', function () {
 Route::post('/subscribe', [SubscriptionController::class, 'store'])->name('subscribe');
 
 Route::get('/subscriptions/export', [SubscriptionController::class, 'export'])->name('subscriptions.export');
+
+// Google analytics
+
+Route::get('/analytics-data/realtime', [AnalyticsController::class, 'getDashboardData'])->name('analytics.realtime');
 
 require __DIR__ . '/settings.php';
 require __DIR__ . '/auth.php';
