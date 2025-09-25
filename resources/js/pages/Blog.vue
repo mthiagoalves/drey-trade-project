@@ -30,7 +30,7 @@ onMounted(() => {
 </style>
 <template>
 
-    <Head title="Blog - Drey Trade" description="any description">
+    <Head title="Blog - Drey Trade Research" description="any description">
         <link rel="preconnect" href="https://rsms.me/" />
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
     </Head>
@@ -46,7 +46,7 @@ onMounted(() => {
                     <h1 ref="typewriter"
                         class="text-white text-4xl md:text-5xl font-bold leading-tight text-start [text-shadow:2px_2px_4px_rgba(0,0,0,0.5)] font-raster">
                     </h1>
-                  
+
                 </div>
             </div>
             <div class="absolute inset-0 flex items-end justify-center pointer-events-none">

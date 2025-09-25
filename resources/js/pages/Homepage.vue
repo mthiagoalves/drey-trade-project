@@ -78,7 +78,7 @@ onUnmounted(() => {
 
 <template>
 
-    <Head title="Drey Trade - Crypto News" description="any description">
+    <Head title="Drey Trade Research" description="any description">
         <link rel="preconnect" href="https://rsms.me/" />
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
     </Head>
