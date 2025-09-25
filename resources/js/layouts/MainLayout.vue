@@ -129,7 +129,8 @@ onMounted(() => {
                                 class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#000000] md:p-0 dark:text-white md:dark:hover:text-teal-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
                             Sobre nós</Link>
                         </li>
-                        <li><a href="#"
+                        <li>
+                            <a href="#footer"
                                 class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#000000] md:p-0 dark:text-white md:dark:hover:text-teal-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contatos</a>
                         </li>
                     </ul>
@@ -139,7 +140,7 @@ onMounted(() => {
         <div class="fixed left-8 md:left-8 top-1/2 -translate-y-1/2 hidden md:flex flex-col items-center gap-8 z-40">
             <span class="text-white [writing-mode:vertical-rl] tracking-widest text-xs uppercase">Siga</span>
 
-            <a href="#" class="text-white hover:text-teal-400 transition-colors">
+            <a href="https://www.instagram.com/drey.trade" class="text-white hover:text-teal-400 transition-colors">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -147,17 +148,17 @@ onMounted(() => {
                     <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                 </svg>
             </a>
-            <a href="#" class="text-white hover:text-teal-400 transition-colors">
+            <!-- <a href="#" class="text-white hover:text-teal-400 transition-colors">
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.21 0-.42-.015-.63.961-.689 1.799-1.56 2.46-2.548l-.047-.02z">
                     </path>
                 </svg>
-            </a>
+            </a> -->
         </div>
         <slot />
 
-        <footer class="bg-white dark:bg-[#000000]">
+        <footer class="bg-white dark:bg-[#000000]" id="footer">
             <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                 <div class="md:flex md:justify-between">
                     <div class="mb-6 md:mb-0">
@@ -173,16 +174,14 @@ onMounted(() => {
                             </h2>
                             <ul class="text-gray-500 dark:text-gray-400 font-medium">
                                 <li class="mb-4">
-                                    <a href="https://dreytrade.com/" class="hover:underline">Drey Trade</a>
+                                    <a href="/blog" class="hover:underline">Blog</a>
                                 </li>
                                 <li class="mb-4">
-                                    <a href="https://dreytrade.com/" class="hover:underline">Blog</a>
-                                </li>
-                                <li class="mb-4">
-                                    <a href="https://dreytrade.com/" class="hover:underline">Sobre Nós</a>
+                                    <a href="/sobre-nos" class="hover:underline">Sobre Nós</a>
                                 </li>
                                 <li>
-                                    <a href="https://tailwindcss.com/" class="hover:underline">Contato</a>
+                                    <a href="mailto:comercial@dreytrade.com?subject=Contato%20pelo%20Site&body=Olá,%20gostaria%20de%20mais%20informações%20sobre..."
+                                        class="hover:underline">comercial@dreytrade.com</a>
                                 </li>
                             </ul>
                         </div>
@@ -224,7 +223,7 @@ onMounted(() => {
                             </svg>
                             <span class="sr-only">Discord community</span>
                         </a>
-                        <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                        <!-- <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
                             <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor" viewBox="0 0 20 17">
                                 <path fill-rule="evenodd"
@@ -232,6 +231,15 @@ onMounted(() => {
                                     clip-rule="evenodd" />
                             </svg>
                             <span class="sr-only">Twitter page</span>
+                        </a> -->
+                        <a href="mailto:comercial@dreytrade.com?subject=Contato%20pelo%20Site&body=Olá,%20gostaria%20de%20mais%20informações%20sobre..."
+                            class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884zM18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                            </svg>
+                            <span class="sr-only">Send email</span>
                         </a>
 
                     </div>
