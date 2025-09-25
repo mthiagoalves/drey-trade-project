@@ -193,7 +193,7 @@ onUnmounted(() => {
                 </div>
 
                 <div class="w-full md:w-1/2 h-80 md:h-[60vh]">
-                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+                    <img src="/images/sections/1.png"
                         alt="Pessoa em uma trilha com montanhas e um lago ao fundo"
                         class="w-full h-full object-cover rounded-lg shadow-2xl">
                 </div>
@@ -205,7 +205,7 @@ onUnmounted(() => {
 
             <div class="max-w-7xl w-full flex flex-col-reverse md:flex-row items-center gap-8 lg:gap-16">
                 <div class="w-full md:w-1/2 h-80 md:h-[60vh]">
-                    <img src="https://images.unsplash.com/photo-1551632811-561732d1e306"
+                    <img src="/images/sections/2.png"
                         alt="Pessoa com mochila de trilha vermelha olhando para montanhas"
                         class="w-full h-full object-cover rounded-lg shadow-2xl">
                 </div>
@@ -295,7 +295,7 @@ onUnmounted(() => {
                 </div>
 
                 <div class="w-full md:w-1/2 h-80 md:h-[60vh]">
-                    <img src="https://images.unsplash.com/photo-1473625247510-8ceb1760943f"
+                    <img src="/images/sections/3.png"
                         alt="Pessoa olhando um mapa com montanhas ao fundo"
                         class="w-full h-full object-cover rounded-lg shadow-2xl">
                 </div>

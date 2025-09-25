@@ -46,9 +46,9 @@ onMounted(() => {
 <template>
     <MaynLayout :title="title" :description="description">
         <nav class="bg-transparent border-gray-200 dark:bg-transparent fixed w-full z-50 top-0 start-0">
-            <div class="relative w-full flex flex-wrap items-center justify-between mx-auto px-4">
+            <div class="relative w-full flex flex-wrap items-center justify-between mx-auto px-8 py-6">
                 <a href="https://dreytrade.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src="/images/logo.png" class="h-20" alt="Drey Trade Logo" />
+                    <img src="/images/logo.png" class="h-12" alt="Drey Trade Logo" />
                     <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Drey Trade</span>
                 </a>
 
