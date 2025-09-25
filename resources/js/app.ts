@@ -8,7 +8,7 @@ import { ZiggyVue } from 'ziggy-js';
 import { initializeTheme } from './composables/useAppearance';
 import 'flowbite';
 
-const appName = import.meta.env.VITE_APP_NAME || 'Drey Trade - Crypto News';
+const appName = import.meta.env.VITE_APP_NAME || 'Drey Trade Research';
 
 createInertiaApp({
     title: (title) => (title ? `${title}` : appName),
