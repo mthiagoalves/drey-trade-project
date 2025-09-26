@@ -13,5 +13,5 @@ defineProps<Props>();
 </script>
 
 <template>
-    <img src="/images/logo.png" class="h-12" alt="Drey Trade Logo" />
+    <img src="/images/logo.png" class="h-8" alt="Drey Trade Logo" />
     </template>
