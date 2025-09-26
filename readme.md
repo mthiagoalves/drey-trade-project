@@ -162,9 +162,9 @@ Distribuído sob a Licença MIT. Veja `LICENSE.txt` para mais informações.
 
 ## 📧 Contato
 
-Thiago Alves - [@mthiagoalves](https://www.google.com/search?q=https://instagram.com/mthiagoalves) - m.thiago.alves@live.com
+Thiago Alves - [@mthiagoalves](https://www.instagram.com/mthiagoalves) - m.thiago.alves@live.com
 
-Link do Projeto: [https://github.com/mthiagoalves/drey-trade-project](https://www.google.com/search?q=https://github.com/mthiagoalves/drey-trade-project)
+Link do Projeto: [https://github.com/mthiagoalves/drey-trade-project](https://github.com/mthiagoalves/drey-trade-project)
 
 ```
 ```
