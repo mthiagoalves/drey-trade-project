@@ -58,7 +58,7 @@ Antes de começar, certifique-se de ter o seguinte software instalado:
 1.  **Clone o repositório:**
 
     ```bash
-    git clone [https://github.com/mthiagoalves/drey-trade-project.git](https://www.google.com/search?q=https://github.com/mthiagoalves/drey-trade-project.git)
+    git clone https://github.com/mthiagoalves/drey-trade-project.git
     ```
 
 2.  **Navegue até o diretório do projeto:**
