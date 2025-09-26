@@ -29,7 +29,7 @@ const footerNavItems: NavItem[] = [
     },
     {
         title: 'ReadME',
-        href: 'https://github.com/mthiagoalves/drey-trade-project.git',
+        href: 'https://github.com/mthiagoalves/drey-trade-project/blob/main/readme.md',
         icon: BookOpen,
     },
 ];
