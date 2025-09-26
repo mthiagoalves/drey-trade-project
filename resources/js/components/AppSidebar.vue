@@ -28,8 +28,8 @@ const footerNavItems: NavItem[] = [
         icon: Folder,
     },
     {
-        title: 'Documentation',
-        href: 'https://laravel.com/docs/starter-kits#vue',
+        title: 'ReadME',
+        href: 'https://github.com/mthiagoalves/drey-trade-project.git',
         icon: BookOpen,
     },
 ];
